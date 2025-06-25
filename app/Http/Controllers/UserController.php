@@ -117,5 +117,18 @@ class UserController extends Controller
         return response()->noContent();
     }
 
+    /**
+     * Log out the current user.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     * 
+     * @response 204 No Content
+     */
+    public function logout(Request $request)
+    {
+        $request->user()->currentAccessToken()->delete();
+        return response()->noContent();
+    }
     
 }

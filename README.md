@@ -5,6 +5,16 @@
 - PHP 8.2+
 - Composer
 
+## Opis
+
+Zaimplementowałem tutaj standardowe API użytkownika z możaliwością rejestracji, logowania, wylogowywania i pozostałych operacji CRUD, zarówno na modelu User jak i Email.
+
+Dodatkowo mamy endpoint do wysyłania maili powitalnych do wszystkich maili danego użykownika.
+
+API jest zabezpieczone za pomocą Sanctum. Aby uzyskać dostęp do chronionych endpointów, należy zarejestrować się i posługiwać otrzymanym tokenem do dalszych requestów.
+
+Wszystkie endpointy zostały udokumentowane za pomocą Scribe.
+
 ## Instalacja i konfiguracja
 1. Sklonuj repozytorium:
 ```bash
